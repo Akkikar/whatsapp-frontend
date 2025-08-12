@@ -25,7 +25,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:9000/api/auth/login", {
+      const response = await axios.post("https://whatsapp-backend-6aup.onrender.com/api/auth/login", {
         wa_id: waId,
         name,
       });
