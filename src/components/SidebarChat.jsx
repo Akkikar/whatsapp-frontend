@@ -18,7 +18,7 @@ const SidebarChat = ({ setActiveChat }) => {
 
     const fetchConversation = async () => {
       try {
-        const res = await axios.get(`http://localhost:9000/api/conversations/${userId}`);
+        const res = await axios.get(`https://whatsapp-backend-6aup.onrender.com/api/conversations/${userId}`);
         setConversations(res.data); // now stores array
       } catch (err) {
         setError('Failed to load conversation');
