@@ -12,7 +12,7 @@ import axios from 'axios';
 import { io } from 'socket.io-client';
 
 
-const socket = io("ws://localhost:9000", { autoConnect: false });
+const socket = io("https://whatsapp-backend-6aup.onrender.com", { autoConnect: false });
 
 const Chat = ({ activeChat }) => {
   const [messages, setMessages] = useState([]);
@@ -39,7 +39,7 @@ const Chat = ({ activeChat }) => {
   useEffect(() => {
     if (activeChat?.conversationId) {
       axios
-        .get(`http://localhost:9000/api/messages/${activeChat.conversationId}`)
+        .get(`https://whatsapp-backend-6aup.onrender.com/api/messages/${activeChat.conversationId}`)
         .then((res) => {
           setMessages(res.data);
         })
