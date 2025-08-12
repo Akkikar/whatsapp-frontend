@@ -1,0 +1,62 @@
+/* Login.css */
+
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px 25px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 24px;
+  color: #075e54; /* WhatsApp green */
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-container input {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #25d366; /* WhatsApp highlight green */
+  outline: none;
+}
+
+.login-container button {
+  background-color: #25d366;
+  color: white;
+  font-weight: 600;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover:not(:disabled) {
+  background-color: #128c4a;
+}
+
+.login-container button:disabled {
+  background-color: #94d7a0;
+  cursor: not-allowed;
+}
+
+.login-container p {
+  margin-top: 15px;
+  font-weight: 500;
+}

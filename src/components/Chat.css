@@ -1,0 +1,110 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.65;
+}
+.chat_header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.chat_headerInfo{
+    flex:1;
+    padding-left: 20px; 
+}
+.chat_headerInfo > h3{
+    margin-bottom: 3px;
+    font-weight: 800;
+}
+.chat_headerInfo > p{
+    color: gray;
+}
+.chat_body{
+    flex:1;
+    background-image: url("../assets/whatsapp.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+.chat_message{
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+.chat_timestamp{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+.chat_name{
+    position: absolute;
+    top:-15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+.chat_receiver{
+    margin-left: auto;
+    background-color: #dcf8c6;
+}
+.chat_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgrey;
+}
+.chat_footer > form{
+    flex:1;
+    display: flex;
+}
+.chat_footer > form > input{
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+.chat_footer > form >button{
+    display: none;
+}
+.chat_footer > .MuiSvgIcon-root{
+    padding: 10px;
+    color: gray;
+}
+.chat_status {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 6px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  background-color: #e5f4ff; /* light blue bubble */
+  color: #007bff; /* blue text */
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chat_status.S {
+  background-color: #f0f0f0; /* light grey for sent */
+  color: #555;
+}
+
+.chat_status.D {
+  background-color: #cce5ff; /* light blue for delivered */
+  color: #004085;
+}
+
+.chat_status.R {
+  background-color: #d4edda; /* light green for read */
+  color: #155724;
+}
+
+.chat_status:hover {
+  background-color: #d9f0ff;
+}
