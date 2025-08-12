@@ -16,7 +16,7 @@ const CreateContactDialog = ({ open, handleClose }) => {
   const handleCreateContact = async () => {
     try {
      
-      const contactRes = await axios.post("http://localhost:9000/api/auth/login", {
+      const contactRes = await axios.post("https://whatsapp-backend-6aup.onrender.com/api/auth/login", {
         name,
         wa_id: waId
       });
@@ -31,7 +31,7 @@ const CreateContactDialog = ({ open, handleClose }) => {
       const senderId = user?._id;
       const receiverId = otherUser._id;
 
-      await axios.post("http://localhost:9000/api/conversations", {
+      await axios.post("https://whatsapp-backend-6aup.onrender.com/api/conversations", {
         senderId,
         receiverId
       });
