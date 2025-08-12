@@ -37,7 +37,7 @@ const Sidebar = ({ setActiveChat }) => {
   const handleSearch = async (term) => {
     setLoading(true);
     try {
-      const res = await axios.get(`http://localhost:9000/api/auth/users?q=${term}`);
+      const res = await axios.get(`https://whatsapp-backend-6aup.onrender.com/api/auth/users?q=${term}`);
       setResults(res.data);
     } catch (err) {
       setResults([]);
