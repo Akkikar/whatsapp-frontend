@@ -19,3 +19,31 @@
 .time{
     flex: 1;
 }
+@media (max-width: 768px) {
+    .sidebarChat {
+        padding: 15px;
+    }
+    .sidebarChat_info > h2 {
+        font-size: 14px;
+    }
+    .sidebarChat_info {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebarChat {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .sidebarChat_info > h2 {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+    .time {
+        font-size: 12px;
+        align-self: flex-end;
+    }
+}
